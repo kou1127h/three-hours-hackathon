@@ -24,7 +24,7 @@ const ChoiceListBox = ({ currentData, onChange }: ChoiceListBoxProps) => {
       <Listbox.Button>
         <p>作るアプリの方向性：{currentData?.name ?? 'press and select'}</p>
       </Listbox.Button>
-      <Listbox.Options>
+      <Listbox.Options className="float">
         {option.map((item) => (
           <Listbox.Option
             key={item.id}
