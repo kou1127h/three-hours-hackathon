@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import ideaList from '@/ideaList.json';
-import { ChoiceData, useChoice } from './Choice';
+import { useChoice } from './Choice';
 
 export default function Home() {
-  // const [isOpen, setIsOpen] = useState(false);
   const ideaListData = ideaList;
   const { choice, ChoiceListBoxUi } = useChoice();
   const [idea, setIdea] = useState('');
